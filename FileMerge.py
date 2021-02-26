@@ -14,5 +14,5 @@ else :
     if not data3.empty :
         data3.to_csv(sys.argv[3])
     else :
-        print("All columns were repeated !")
+        print("The file is Empty!")
 
