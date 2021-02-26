@@ -3,7 +3,7 @@ import sys
 import glob
 
 if ( len(sys.argv) != 3 ) :
-    print("Please provide all three arguments!")
+    print("Please provide both the folder name and desired csv file name !")
 else :
     path = sys.argv[1]
     all_files = glob.glob(path + "/*.csv")
