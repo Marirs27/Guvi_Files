@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Pop Up
+    </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+    <div class="col-md-12 text-center pt-5">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+            Pop Up
+        </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content pt-4 pr-5 pl-5 pb-4">
+                <div class="modal-body p-0">
+                    <img class="close" data-dismiss="modal" src="Images/close.svg" class="float-right"
+                        style="position: relative; margin-top: -10px; margin-right: -35px;">
+                    <h4 class="font-weight-bold"><strong>
+                            Transfer your cash to <img class="pb-2 pl-2"
+                                src="https://img.icons8.com/color/90/000000/paytm.png" />
+                        </strong></h4>
+                    <h6 class="text-muted">Paytm ID</h6>
+                    <input type="email" class="form-control text-muted p-3" id="exampleInputEmail1"
+                        style="font-size: 15px;" aria-describedby="emailHelp" placeholder="Enter your paytm ID">
+                    <small id="emailHelp" class="form-text text-success">Amount will be transferred to the entered
+                        ID</small>
+                    <br>
+                    <h6 class="float-left text-muted">Amount</h6>
+                    <h5 class="float-right"><strong>₹ 1200</strong></h5>
+                    <br><br>
+                    <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#myModal2"
+                        data-dismiss="modal">
+                        Transfer Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content pt-5 pr-5 pl-5 pb-4">
+                <div class="modal-body p-0">
+                    <img class="close" data-dismiss="modal" src="Images/close.svg" class="float-right"
+                        style="position: relative; margin-top: -35px; margin-right: -35px;">
+                    <img class="mx-auto d-block" src="Images/check.png">
+                    <br>
+                    <h4 class="font-weight-bold text-center"><strong> Added successfully to </strong></h4>
+                    <h5 class="text-muted text-center">Your Paytm Wallet</h5>
+                    <br>
+                    <h6 class="text-muted text-center">Your amount was added to your Paytm wallet</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js">
+    </script>
+</body>
+
+</html>
